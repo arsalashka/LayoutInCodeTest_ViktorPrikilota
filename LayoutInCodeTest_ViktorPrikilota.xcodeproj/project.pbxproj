@@ -7,23 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47E1FB2EFB1CF69D2544C9DD /* Pods_LayoutInCodeTest_ViktorPrikilota.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B188BD109329A52BC626BC24 /* Pods_LayoutInCodeTest_ViktorPrikilota.framework */; };
+		6C57C30C2BDCC8DC0032E0D1 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C57C30B2BDCC8DC0032E0D1 /* SignupViewController.swift */; };
 		6CAA8A542BDCAE07009A1737 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAA8A532BDCAE07009A1737 /* AppDelegate.swift */; };
 		6CAA8A562BDCAE07009A1737 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAA8A552BDCAE07009A1737 /* SceneDelegate.swift */; };
 		6CAA8A582BDCAE07009A1737 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAA8A572BDCAE07009A1737 /* LoginViewController.swift */; };
-		6CAA8A5B2BDCAE07009A1737 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6CAA8A5A2BDCAE07009A1737 /* Base */; };
 		6CAA8A5D2BDCAE09009A1737 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CAA8A5C2BDCAE09009A1737 /* Assets.xcassets */; };
 		6CAA8A602BDCAE09009A1737 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6CAA8A5F2BDCAE09009A1737 /* Base */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6C57C30B2BDCC8DC0032E0D1 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		6CAA8A502BDCAE07009A1737 /* LayoutInCodeTest_ViktorPrikilota.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LayoutInCodeTest_ViktorPrikilota.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CAA8A532BDCAE07009A1737 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6CAA8A552BDCAE07009A1737 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6CAA8A572BDCAE07009A1737 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		6CAA8A5A2BDCAE07009A1737 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6CAA8A5C2BDCAE09009A1737 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6CAA8A5F2BDCAE09009A1737 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6CAA8A612BDCAE09009A1737 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B188BD109329A52BC626BC24 /* Pods_LayoutInCodeTest_ViktorPrikilota.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LayoutInCodeTest_ViktorPrikilota.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB37CC34F22325C9538A6412 /* Pods-LayoutInCodeTest_ViktorPrikilota.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LayoutInCodeTest_ViktorPrikilota.release.xcconfig"; path = "Target Support Files/Pods-LayoutInCodeTest_ViktorPrikilota/Pods-LayoutInCodeTest_ViktorPrikilota.release.xcconfig"; sourceTree = "<group>"; };
+		F871573D86B0515F36F962C0 /* Pods-LayoutInCodeTest_ViktorPrikilota.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LayoutInCodeTest_ViktorPrikilota.debug.xcconfig"; path = "Target Support Files/Pods-LayoutInCodeTest_ViktorPrikilota/Pods-LayoutInCodeTest_ViktorPrikilota.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47E1FB2EFB1CF69D2544C9DD /* Pods_LayoutInCodeTest_ViktorPrikilota.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				6CAA8A522BDCAE07009A1737 /* LayoutInCodeTest_ViktorPrikilota */,
 				6CAA8A512BDCAE07009A1737 /* Products */,
+				860A4D3BA0A7F2C581578EF2 /* Pods */,
+				DADD772070B17CCB0C3DD266 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +65,30 @@
 			children = (
 				6CAA8A532BDCAE07009A1737 /* AppDelegate.swift */,
 				6CAA8A552BDCAE07009A1737 /* SceneDelegate.swift */,
+				6C57C30B2BDCC8DC0032E0D1 /* SignupViewController.swift */,
 				6CAA8A572BDCAE07009A1737 /* LoginViewController.swift */,
-				6CAA8A592BDCAE07009A1737 /* Main.storyboard */,
 				6CAA8A5C2BDCAE09009A1737 /* Assets.xcassets */,
 				6CAA8A5E2BDCAE09009A1737 /* LaunchScreen.storyboard */,
 				6CAA8A612BDCAE09009A1737 /* Info.plist */,
 			);
 			path = LayoutInCodeTest_ViktorPrikilota;
+			sourceTree = "<group>";
+		};
+		860A4D3BA0A7F2C581578EF2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F871573D86B0515F36F962C0 /* Pods-LayoutInCodeTest_ViktorPrikilota.debug.xcconfig */,
+				BB37CC34F22325C9538A6412 /* Pods-LayoutInCodeTest_ViktorPrikilota.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DADD772070B17CCB0C3DD266 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B188BD109329A52BC626BC24 /* Pods_LayoutInCodeTest_ViktorPrikilota.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6CAA8A642BDCAE09009A1737 /* Build configuration list for PBXNativeTarget "LayoutInCodeTest_ViktorPrikilota" */;
 			buildPhases = (
+				52183444CAB75BA5D3114165 /* [CP] Check Pods Manifest.lock */,
 				6CAA8A4C2BDCAE07009A1737 /* Sources */,
 				6CAA8A4D2BDCAE07009A1737 /* Frameworks */,
 				6CAA8A4E2BDCAE07009A1737 /* Resources */,
+				CA1273BCD652414BCE5E8C14 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,11 +153,52 @@
 			files = (
 				6CAA8A5D2BDCAE09009A1737 /* Assets.xcassets in Resources */,
 				6CAA8A602BDCAE09009A1737 /* Base in Resources */,
-				6CAA8A5B2BDCAE07009A1737 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		52183444CAB75BA5D3114165 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LayoutInCodeTest_ViktorPrikilota-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA1273BCD652414BCE5E8C14 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LayoutInCodeTest_ViktorPrikilota/Pods-LayoutInCodeTest_ViktorPrikilota-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LayoutInCodeTest_ViktorPrikilota/Pods-LayoutInCodeTest_ViktorPrikilota-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LayoutInCodeTest_ViktorPrikilota/Pods-LayoutInCodeTest_ViktorPrikilota-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6CAA8A4C2BDCAE07009A1737 /* Sources */ = {
@@ -140,6 +207,7 @@
 			files = (
 				6CAA8A582BDCAE07009A1737 /* LoginViewController.swift in Sources */,
 				6CAA8A542BDCAE07009A1737 /* AppDelegate.swift in Sources */,
+				6C57C30C2BDCC8DC0032E0D1 /* SignupViewController.swift in Sources */,
 				6CAA8A562BDCAE07009A1737 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +215,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		6CAA8A592BDCAE07009A1737 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6CAA8A5A2BDCAE07009A1737 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6CAA8A5E2BDCAE09009A1737 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -203,7 +263,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -266,7 +326,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -287,6 +347,7 @@
 		};
 		6CAA8A652BDCAE09009A1737 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F871573D86B0515F36F962C0 /* Pods-LayoutInCodeTest_ViktorPrikilota.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -297,7 +358,7 @@
 				INFOPLIST_FILE = LayoutInCodeTest_ViktorPrikilota/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -315,6 +376,7 @@
 		};
 		6CAA8A662BDCAE09009A1737 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB37CC34F22325C9538A6412 /* Pods-LayoutInCodeTest_ViktorPrikilota.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -325,7 +387,7 @@
 				INFOPLIST_FILE = LayoutInCodeTest_ViktorPrikilota/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
