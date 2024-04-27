@@ -32,8 +32,6 @@ class LoginViewController: UIViewController {
     private func setupContainerView() {
         view.addSubview(containerView)
         
-//        containerView.backgroundColor = .systemGray2
-        
         containerView.snp.makeConstraints { make in
             make.leading.equalToSuperview().inset(45)
             make.trailing.equalToSuperview().inset(45)
@@ -58,12 +56,9 @@ class LoginViewController: UIViewController {
     private func setupSignupButton() {
         view.addSubview(signupButton)
         
-        //        signupButton.backgroundColor = .blue
-        
         signupButton.titleLabel?.font = UIFont.systemFont(ofSize: 20, weight: .regular)
         signupButton.setTitle("Sign Up", for: .normal)
         signupButton.setTitleColor(.systemGray, for: .normal)
-        
         
         signupButton.snp.makeConstraints { make in
             make.leading.equalTo(loginLabel.snp.trailing).offset(10)
@@ -71,9 +66,8 @@ class LoginViewController: UIViewController {
         }
         
         signupButton.addAction(UIAction { [weak self] _ in
-            let signupVC = UIViewController()
+            let signupVC = SignupViewController()
             
-            signupVC.view.backgroundColor = .purple
             signupVC.modalPresentationStyle = .fullScreen
             
             self?.present(signupVC, animated: true)
