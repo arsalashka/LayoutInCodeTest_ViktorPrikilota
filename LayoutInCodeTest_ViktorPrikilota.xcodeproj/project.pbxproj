@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		47E1FB2EFB1CF69D2544C9DD /* Pods_LayoutInCodeTest_ViktorPrikilota.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B188BD109329A52BC626BC24 /* Pods_LayoutInCodeTest_ViktorPrikilota.framework */; };
 		6C57C30C2BDCC8DC0032E0D1 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C57C30B2BDCC8DC0032E0D1 /* SignupViewController.swift */; };
+		6C846D2E2BDD792A00BCCE0E /* TextBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C846D2D2BDD792A00BCCE0E /* TextBlock.swift */; };
 		6CAA8A542BDCAE07009A1737 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAA8A532BDCAE07009A1737 /* AppDelegate.swift */; };
 		6CAA8A562BDCAE07009A1737 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAA8A552BDCAE07009A1737 /* SceneDelegate.swift */; };
 		6CAA8A582BDCAE07009A1737 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAA8A572BDCAE07009A1737 /* LoginViewController.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		6C57C30B2BDCC8DC0032E0D1 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		6C846D2D2BDD792A00BCCE0E /* TextBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBlock.swift; sourceTree = "<group>"; };
 		6CAA8A502BDCAE07009A1737 /* LayoutInCodeTest_ViktorPrikilota.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LayoutInCodeTest_ViktorPrikilota.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CAA8A532BDCAE07009A1737 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6CAA8A552BDCAE07009A1737 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				6CAA8A552BDCAE07009A1737 /* SceneDelegate.swift */,
 				6C57C30B2BDCC8DC0032E0D1 /* SignupViewController.swift */,
 				6CAA8A572BDCAE07009A1737 /* LoginViewController.swift */,
+				6C846D2D2BDD792A00BCCE0E /* TextBlock.swift */,
 				6CAA8A5C2BDCAE09009A1737 /* Assets.xcassets */,
 				6CAA8A5E2BDCAE09009A1737 /* LaunchScreen.storyboard */,
 				6CAA8A612BDCAE09009A1737 /* Info.plist */,
@@ -207,6 +210,7 @@
 			files = (
 				6CAA8A582BDCAE07009A1737 /* LoginViewController.swift in Sources */,
 				6CAA8A542BDCAE07009A1737 /* AppDelegate.swift in Sources */,
+				6C846D2E2BDD792A00BCCE0E /* TextBlock.swift in Sources */,
 				6C57C30C2BDCC8DC0032E0D1 /* SignupViewController.swift in Sources */,
 				6CAA8A562BDCAE07009A1737 /* SceneDelegate.swift in Sources */,
 			);

@@ -12,7 +12,10 @@ class LoginViewController: UIViewController {
     private let containerView = UIView()
     private let loginLabel = UILabel()
     private let signupButton = UIButton()
-
+    private let usernameView = TextBlockView()
+    private let passwordView = TextBlockView()
+    private let loginButton = UIButton()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -21,18 +24,21 @@ class LoginViewController: UIViewController {
         setupContainerView()
         setupLoginLabel()
         setupSignupButton()
+        setupUsernameView()
+        setupPasswordView()
+        setupLoginButton()
     }
     
     private func setupContainerView() {
         view.addSubview(containerView)
         
-        containerView.backgroundColor = .lightGray
+//        containerView.backgroundColor = .systemGray2
         
         containerView.snp.makeConstraints { make in
             make.leading.equalToSuperview().inset(45)
             make.trailing.equalToSuperview().inset(45)
-            make.top.equalToSuperview().inset(238)
-            make.bottom.equalToSuperview().inset(269)
+            make.centerX.equalToSuperview()
+            make.centerY.equalToSuperview()
         }
     }
     
@@ -40,6 +46,7 @@ class LoginViewController: UIViewController {
         view.addSubview(loginLabel)
         
         loginLabel.font = UIFont.systemFont(ofSize: 30, weight: .semibold)
+        loginLabel.textColor = UIColor(rgb: 0x505050)
         loginLabel.text = "LOGIN /"
         
         loginLabel.snp.makeConstraints { make in
@@ -51,13 +58,13 @@ class LoginViewController: UIViewController {
     private func setupSignupButton() {
         view.addSubview(signupButton)
         
-//        signupButton.backgroundColor = .blue
+        //        signupButton.backgroundColor = .blue
         
         signupButton.titleLabel?.font = UIFont.systemFont(ofSize: 20, weight: .regular)
         signupButton.setTitle("Sign Up", for: .normal)
-        signupButton.setTitleColor(.gray, for: .normal)
+        signupButton.setTitleColor(.systemGray, for: .normal)
         
-     
+        
         signupButton.snp.makeConstraints { make in
             make.leading.equalTo(loginLabel.snp.trailing).offset(10)
             make.bottomMargin.equalTo(loginLabel.snp.bottom).inset(4)
@@ -71,5 +78,42 @@ class LoginViewController: UIViewController {
             
             self?.present(signupVC, animated: true)
         }, for: .touchUpInside)
+    }
+    
+    private func setupUsernameView() {
+        view.addSubview(usernameView)
+        usernameView.setPlaceHolder(with: "Username")
+        
+        usernameView.snp.makeConstraints { make in
+            make.top.equalTo(loginLabel.snp.bottom).offset(34)
+            make.horizontalEdges.equalTo(containerView.snp.horizontalEdges)
+        }
+    }
+    
+    private func setupPasswordView() {
+        view.addSubview(passwordView)
+        passwordView.setPlaceHolder(with: "Password")
+        
+        passwordView.snp.makeConstraints { make in
+            make.top.equalTo(usernameView.snp.bottom).offset(58)
+            make.horizontalEdges.equalTo(containerView.snp.horizontalEdges)
+        }
+    }
+    
+    private func setupLoginButton() {
+        view.addSubview(loginButton)
+        
+        loginButton.setTitle("Login", for: .normal)
+        loginButton.titleLabel?.font = .systemFont(ofSize: 20, weight: .medium)
+        loginButton.backgroundColor = UIColor(rgb: 0x7795FF)
+        loginButton.layer.cornerRadius = 18
+        
+        loginButton.snp.makeConstraints { make in
+            make.width.equalTo(142)
+            make.height.equalTo(44)
+            make.top.equalTo(passwordView.snp.bottom).offset(64)
+            make.trailing.equalTo(containerView)
+            make.bottom.equalTo(containerView)
+        }
     }
 }

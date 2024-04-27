@@ -73,5 +73,6 @@ xcuserdata/
 
 #macOS
 .DS_Store
+.gitignore
 AlpariMobile/.DS_Store
 AlpariMobile/Assets.xcassets/.DS_Store
