@@ -43,10 +43,8 @@ final class LoginController: UIViewController {
         view.addSubview(containerView)
         
         containerView.snp.makeConstraints { make in
-            make.leading.equalToSuperview().inset(45)
-            make.trailing.equalToSuperview().inset(45)
-            make.centerX.equalToSuperview()
-            make.centerY.equalToSuperview()
+            make.horizontalEdges.equalToSuperview().inset(45)
+            make.center.equalToSuperview()
         }
     }
     
@@ -74,7 +72,6 @@ final class LoginController: UIViewController {
             make.leading.equalTo(loginLabel.snp.trailing).offset(10)
             make.bottomMargin.equalTo(loginLabel.snp.bottom).inset(4)
         }
-        
         signupButton.addTarget(self, action: #selector(signupButtonPressed), for: .touchUpInside)
     }
     
