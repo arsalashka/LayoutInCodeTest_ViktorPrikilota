@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class LoginViewController: UIViewController {
+final class LoginController: UIViewController {
     private let containerView = UIView()
     private let loginLabel = UILabel()
     private let signupButton = UIButton()
@@ -65,13 +65,16 @@ class LoginViewController: UIViewController {
             make.bottomMargin.equalTo(loginLabel.snp.bottom).inset(4)
         }
         
-        signupButton.addAction(UIAction { [weak self] _ in
-            let signupVC = SignupViewController()
-            
-            signupVC.modalPresentationStyle = .fullScreen
-            
-            self?.present(signupVC, animated: true)
-        }, for: .touchUpInside)
+        signupButton.addTarget(self, action: #selector(signupButtonPressed), for: .touchUpInside)
+        
+        
+//        signupButton.addAction(UIAction { [weak self] _ in
+//            let signupVC = SignupController()
+//            
+//            signupVC.modalPresentationStyle = .fullScreen
+//            
+//            self?.present(signupVC, animated: true)
+//        }, for: .touchUpInside)
     }
     
     private func setupUsernameView() {
@@ -109,5 +112,12 @@ class LoginViewController: UIViewController {
             make.trailing.equalTo(containerView)
             make.bottom.equalTo(containerView)
         }
+    }
+    
+    @objc private func signupButtonPressed() {
+        let signupVC = SignupController()
+        
+        signupVC.modalPresentationStyle = .fullScreen
+        present(signupVC, animated: true)
     }
 }

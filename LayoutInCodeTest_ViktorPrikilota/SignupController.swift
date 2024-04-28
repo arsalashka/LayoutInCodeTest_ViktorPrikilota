@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SignupViewController: UIViewController {
+final class SignupController: UIViewController {
     private let containerView = UIView()
     private let signupLabel = UILabel()
     private let loginButton = UIButton()
@@ -66,9 +66,7 @@ class SignupViewController: UIViewController {
             make.bottomMargin.equalTo(signupLabel.snp.bottom).inset(4)
         }
         
-        loginButton.addAction(UIAction { [weak self] _ in
-            self?.dismiss(animated: true)
-        }, for: .touchUpInside)
+        loginButton.addTarget(self, action: #selector(loginButtonPressed), for: .touchUpInside)
     }
     
     private func setupUsernameView() {
@@ -116,5 +114,9 @@ class SignupViewController: UIViewController {
             make.trailing.equalTo(containerView)
             make.bottom.equalTo(containerView)
         }
+    }
+    
+    @objc private func loginButtonPressed() {
+        dismiss(animated: true)
     }
 }

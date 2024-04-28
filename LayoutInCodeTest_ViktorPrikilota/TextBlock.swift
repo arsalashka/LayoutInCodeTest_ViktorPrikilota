@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class TextBlockView: UIView {
+final class TextBlockView: UIView {
     private let placeHolderLabel = UILabel()
     private let lineView = UIView()
     
