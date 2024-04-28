@@ -23,11 +23,22 @@ final class TextBlockView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    //  MARK: - Public Methods
+    
+    func setPlaceHolder(with text: String?) {
+        guard let text = text else {
+            fatalError("Could not pass placeHolderLabel.text")
+        }
+        placeHolderLabel.text = text
+    }
+    
+    //  MARK: - Setup Methods
+    
     private func setupPlaceHolderLabel() {
         addSubview(placeHolderLabel)
         
         placeHolderLabel.font = UIFont.systemFont(ofSize: 20, weight: .regular)
-        placeHolderLabel.textColor = UIColor(rgb: 0x838383)
+        placeHolderLabel.textColor = UIColor.CustomColors.placeHolderTextColor
         
         placeHolderLabel.snp.makeConstraints { make in
             make.top.equalToSuperview()
@@ -38,22 +49,13 @@ final class TextBlockView: UIView {
     private func setupLineView() {
         addSubview(lineView)
         
-        lineView.backgroundColor =  UIColor(rgb: 0xDDDDDD)
-      
+        lineView.backgroundColor =  UIColor.CustomColors.lineViewBackgroundColor
+        
         lineView.snp.makeConstraints { make in
             make.horizontalEdges.equalToSuperview()
             make.top.equalTo(placeHolderLabel.snp.bottom).offset(6)
             make.height.equalTo(2)
             make.bottom.equalTo(self.snp.bottom)
         }
-    }
-    
-    //  MARK: - Public Methods
-    
-    func setPlaceHolder(with text: String?) {
-        guard let text = text else {
-            fatalError("Could not pass placeHolderLabel.text")
-        }
-        placeHolderLabel.text = text
     }
 }

@@ -6,6 +6,16 @@
 //
 
 import UIKit
+import SnapKit
+
+private enum Constants: String {
+    case signupLabelText = "SIGN UP /"
+    case loginButtonTitle = "Login"
+    case usernameViewPlaceHolder = "Username"
+    case passwordViewPlaceHolder = "Password"
+    case reenterPasswordViewPlaceHolder = "Re-enter Password"
+    case signupButtonTitle = "Sign Up"
+}
 
 final class SignupController: UIViewController {
     private let containerView = UIView()
@@ -30,6 +40,8 @@ final class SignupController: UIViewController {
         setupSignupButton()
     }
     
+    //  MARK: - Setup Methods
+    
     private func setupContainerView() {
         view.addSubview(containerView)
         
@@ -45,8 +57,8 @@ final class SignupController: UIViewController {
         view.addSubview(signupLabel)
         
         signupLabel.font = UIFont.systemFont(ofSize: 30, weight: .semibold)
-        signupLabel.textColor = UIColor(rgb: 0x505050)
-        signupLabel.text = "SIGN UP /"
+        signupLabel.textColor = UIColor.CustomColors.labelTextColor
+        signupLabel.text = Constants.signupLabelText.rawValue
         
         signupLabel.snp.makeConstraints { make in
             make.top.equalTo(containerView.snp.top)
@@ -58,7 +70,7 @@ final class SignupController: UIViewController {
         view.addSubview(loginButton)
         
         loginButton.titleLabel?.font = UIFont.systemFont(ofSize: 20, weight: .regular)
-        loginButton.setTitle("Login", for: .normal)
+        loginButton.setTitle(Constants.loginButtonTitle.rawValue, for: .normal)
         loginButton.setTitleColor(.systemGray, for: .normal)
         
         loginButton.snp.makeConstraints { make in
@@ -71,7 +83,7 @@ final class SignupController: UIViewController {
     
     private func setupUsernameView() {
         view.addSubview(usernameView)
-        usernameView.setPlaceHolder(with: "Username")
+        usernameView.setPlaceHolder(with: Constants.usernameViewPlaceHolder.rawValue)
         
         usernameView.snp.makeConstraints { make in
             make.top.equalTo(signupLabel.snp.bottom).offset(34)
@@ -81,7 +93,7 @@ final class SignupController: UIViewController {
     
     private func setupPasswordView() {
         view.addSubview(passwordView)
-        passwordView.setPlaceHolder(with: "Password")
+        passwordView.setPlaceHolder(with: Constants.passwordViewPlaceHolder.rawValue)
         
         passwordView.snp.makeConstraints { make in
             make.top.equalTo(usernameView.snp.bottom).offset(58)
@@ -91,7 +103,7 @@ final class SignupController: UIViewController {
     
     private func setupReenterPasswordView() {
         view.addSubview(reenterPasswordView)
-        reenterPasswordView.setPlaceHolder(with: "Re-enter Password")
+        reenterPasswordView.setPlaceHolder(with: Constants.reenterPasswordViewPlaceHolder.rawValue)
         
         reenterPasswordView.snp.makeConstraints { make in
             make.top.equalTo(passwordView.snp.bottom).offset(58)
@@ -102,9 +114,9 @@ final class SignupController: UIViewController {
     private func setupSignupButton() {
         view.addSubview(signupButton)
         
-        signupButton.setTitle("Sign Up", for: .normal)
+        signupButton.setTitle(Constants.signupButtonTitle.rawValue, for: .normal)
         signupButton.titleLabel?.font = .systemFont(ofSize: 20, weight: .medium)
-        signupButton.backgroundColor = UIColor(rgb: 0x7795FF)
+        signupButton.backgroundColor = UIColor.CustomColors.buttonBackgroundColor
         signupButton.layer.cornerRadius = 18
         
         signupButton.snp.makeConstraints { make in
@@ -115,6 +127,8 @@ final class SignupController: UIViewController {
             make.bottom.equalTo(containerView)
         }
     }
+    
+    //  MARK: - Action Methods
     
     @objc private func loginButtonPressed() {
         dismiss(animated: true)
